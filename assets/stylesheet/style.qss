@@ -1,0 +1,113 @@
+QMainWindow {
+    background-color:rgb(255, 255, 255);
+}
+
+#renderPanel {
+    background-color: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #131820,
+        stop: 1 #193c88
+    );
+    margin-left: 5px;
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+#situationPanel {
+    background-color:rgba(121, 112, 174, 0.73);
+   
+    min-width: 200px;
+    border: 1px ;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+#inputPanel {
+    background-color:rgba(30, 28, 42, 0.72);
+    padding: 10px;
+    min-width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#outputPanel {
+    background-color: #373448;
+    border: 1px solid #7c7c7c;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top:10px;
+}
+
+#viewInputPanel {
+    background-color: #373448;
+    border: 1px solid #7c7c7c;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+QRadioButton {
+    font-size: 11px;
+    padding: 3px;
+}
+
+QPushButton {
+    background-color: #372a84;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #555;
+}
+
+QPushButton:pressed {
+    background-color: #372a84;
+}
+
+QComboBox {
+    background-color: #666;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+QLineEdit {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 11px;
+}
+
+QScrollBar:vertical {
+    background: #767676;
+    width: 12px;
+    margin: 0px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: #bbb;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #787878;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+    border: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
