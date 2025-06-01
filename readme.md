@@ -18,6 +18,9 @@ Our application offers intuitive and dynamic background images that change based
 **5) Live Data Monitoring**
 User can see real-time display of TSA sensor responses and LCU communication.
 
+## Note
+- The main backend library for communicating with the sensor is not provided because of NDA
+
 ## Communication and Responses
 - MSSP protocol support
 - TSA0002 device info responses such as identification and specification
@@ -38,8 +41,6 @@ User can see real-time display of TSA sensor responses and LCU communication.
 
 ## Installation
 ### 1. Clone the repository
-git clone https://github.com/thethtarzin111/teknoware_hackathon.git
-cd teknoware_hackathon (or path to your extracted zip file)
 
 ### 2. Create a virtual environment
 python -m venv venv
@@ -53,26 +54,7 @@ pip install -r requirements.txt
 ### 5. Run the application
 python main.py
 
-## Common Issues
-
-### 1) MSSP Library Not Available
-- Ensure that you've installed pyserial.
-- Verify that tw_mssp.py and tw_fast_crc.py are in project root directory.
-
-### 2) COM Port Connection Failed
-- Check Device Manager for correct COM port.
-- Ensure no other applications are using the port.
-- Verify LCU is powered and connected.
-- Try different COM ports (COM6, COM3, etc.)
-
-### 3) Directory Error
-- Make sure that virtual environment is created in the same directory as ui and assets folders.
-
 ## Authors
 ### Mohammad Amman - Lead Developer, UI Designer
 ### Salek Md Peash Been - Developer, Code Reviewer
 ### Thet Htar Zin - Developer, Code Reviewer
-
-
-##  AI DECLARATION
-This application was developed with the help of AI tools such as ChatGPT and Claude. They were used to understand the possible different real-life based scenarios such as tuneel and vandalism. It was also used to get UI design configurations. However, the code provided by the tools wasn't directly copied but rather modified based on our preference. It was also used to solve common issues such as directory error, dependencies installation and error finding. 
